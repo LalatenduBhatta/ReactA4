@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // class Car {
+        //     constructor(name, brand, color) {
+        //         this.car_name = name
+        //         this.car_brand = brand
+        //         this.car_color = color
+        //     }
+        //     countryOrigin(country) {
+        //         console.log(this.car_name + " origin is from " + country);
+        //     }
+        // }
+        // const car1 = new Car("A8", "Audi", "white")
+        // console.log(car1);//{car_name: 'A8', car_brand: 'Audi', car_color: 'white'}
+        // car1.countryOrigin("Germany")//A8 origin is from Germany
+
+        // const car2 = new Car("supra", "Toyota", "blue")
+        // console.log(car2)
+        // car2.countryOrigin("Italy")
+
+
+        class Animal {
+            constructor(name, breed, color) {
+                this.name = name
+                this.breed = breed
+                this.color = color
+            }
+            makeSounds(sound) {
+                console.log(`${this.name} sounds like ${sound}`);
+            }
+        }
+        class Dog extends Animal {
+            constructor(name, breed, color, age, petName) {
+                super(name, breed, color)
+                this.age = age
+                this.petName = petName
+            }
+            makeSounds() {
+                console.log(`${this.name} sounds like bhow bhow`);
+            }
+        }
+
+        const dog1 = new Dog("dog", "German S", "black", 2.8, "Tom")
+        console.log(dog1);
+        dog1.makeSounds()
+    </script>
+</body>
+
+</html>
