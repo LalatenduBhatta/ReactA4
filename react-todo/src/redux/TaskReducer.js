@@ -12,6 +12,13 @@ function taskReducer(state = initialState, action) {
             return [...state, obj]
         case "del":
             return state.filter(ele => ele.id != action.payload)
+        case "edit":
+            return state.map(ele => {
+                if (ele.id == action.payload.id) {
+                    ele.task = action.payload.task
+                }
+                return ele
+            })
         default:
             return state
     }

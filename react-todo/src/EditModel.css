@@ -1,0 +1,53 @@
+.modal{
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(143, 235, 143, 0.3);
+    box-shadow: 0 0 30px inset black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    padding: 30px;
+    background-color: blue;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 40vw;
+    height: 30vh;
+    gap: 40px;
+}
+.box>textarea{
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 1px solid rgb(107, 178, 7);
+    outline: none;
+    font-size: 24px;
+}
+.box>.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box>.buttons>button{
+    padding: 7px 14px;
+    background-color: rgb(60, 156, 5);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cross{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.cross>button{
+    font-size: 24px;
+    padding: 1px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
