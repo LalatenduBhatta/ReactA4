@@ -1,13 +1,17 @@
 import React from 'react'
+import Navbar from './Navbar'
+import InputField from './InputField'
+import TaskDisplay from './TaskDisplay'
 import { Provider } from "react-redux"
-import Child from './Child'
 import store from './redux/Store'
 
 function App() {
   return (
     <>
       <Provider store={store}>
-        <Child></Child>
+        <Navbar />
+        <InputField />
+        <TaskDisplay />
       </Provider>
     </>
   )

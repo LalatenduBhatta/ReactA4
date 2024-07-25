@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: start;
+    gap: 20px;
+    background-color: #808080;
+    min-height:80vh;
+    padding: 10px;
+}
+.card{
+    background-color: rgb(255, 174, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 150px;
+    align-items: flex-start;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+.card>.text{
+    height: inherit;
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 20px;
+}
+.card>.buttons{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.card>.buttons>button{
+    padding: 7px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
